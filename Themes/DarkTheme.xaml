@@ -1,0 +1,52 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- ==================== DESIGN.md Dark Mode Tokens ==================== -->
+
+    <!-- Backgrounds -->
+    <SolidColorBrush x:Key="BgPage"            Color="#0e0e0e" />
+    <SolidColorBrush x:Key="BgSurface"         Color="#161616" />
+    <SolidColorBrush x:Key="BgSurfaceLow"      Color="#1a1a1a" />
+    <SolidColorBrush x:Key="BgContainer"       Color="#202020" />
+    <SolidColorBrush x:Key="BgContainerHigh"   Color="#282828" />
+
+    <!-- Text -->
+    <SolidColorBrush x:Key="TextPrimary"       Color="#f2f2f2" />
+    <SolidColorBrush x:Key="TextSecondary"     Color="#9a9a9a" />
+    <SolidColorBrush x:Key="TextMuted"         Color="#747474" />
+
+    <!-- Borders -->
+    <SolidColorBrush x:Key="Border"            Color="#2c2c2c" />
+    <SolidColorBrush x:Key="BorderStrong"      Color="#404040" />
+
+    <!-- Accent (monochrome ink) -->
+    <SolidColorBrush x:Key="Accent"            Color="#f2f2f2" />
+    <SolidColorBrush x:Key="AccentStrong"      Color="#d8dde3" />
+
+    <!-- Selection -->
+    <SolidColorBrush x:Key="SelectedBg"        Color="#f2f2f2" />
+    <SolidColorBrush x:Key="SelectedText"      Color="#000000" />
+    <SolidColorBrush x:Key="HoverBg"           Color="#1a1a1a" />
+
+    <!-- Semantic Colors -->
+    <SolidColorBrush x:Key="Success"           Color="#5ee577" />
+    <SolidColorBrush x:Key="SuccessWash"       Color="#0d2a1a" />
+    <SolidColorBrush x:Key="Warning"           Color="#ffc779" />
+    <SolidColorBrush x:Key="WarningWash"       Color="#3a2611" />
+    <SolidColorBrush x:Key="Destructive"       Color="#ff7b7b" />
+    <SolidColorBrush x:Key="DestructiveWash"   Color="#3a1214" />
+    <SolidColorBrush x:Key="Blue"              Color="#a0b4ff" />
+    <SolidColorBrush x:Key="BlueWash"          Color="#171f42" />
+
+    <!-- Legacy aliases — keep extensions working without modification -->
+    <SolidColorBrush x:Key="BgElevated"           Color="#202020" />
+    <SolidColorBrush x:Key="BgInput"              Color="#1a1a1a" />
+
+    <!-- Legacy alias used by ToggleButton checked state -->
+    <SolidColorBrush x:Key="BgPressed"         Color="#282828" />
+
+    <!-- Type accent rails (left border on selected row) -->
+    <SolidColorBrush x:Key="AccentRailApp"     Color="#f2f2f2" />
+    <SolidColorBrush x:Key="AccentRailFile"    Color="#a0b4ff" />
+
+</ResourceDictionary>

@@ -1,0 +1,50 @@
+﻿<Window x:Class="Flow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="clr-namespace:Flow.Views"
+        Title="Flow"
+        Width="680"
+        SizeToContent="Height"
+        MaxHeight="560"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        WindowStartupLocation="CenterScreen"
+        ShowInTaskbar="False"
+        KeyDown="Window_KeyDown"
+        Deactivated="Window_Deactivated">
+
+    <!-- Outer border: window radius, only shadow in the app, 1px line-strong border -->
+    <Border Background="{StaticResource BgPage}"
+            CornerRadius="{StaticResource RadiusWindow}"
+            BorderBrush="{StaticResource BorderStrong}"
+            BorderThickness="1"
+            Effect="{StaticResource WindowShadow}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <!-- Search bar -->
+                <RowDefinition Height="56" />
+                <!-- 1px line divider -->
+                <RowDefinition Height="1" />
+                <!-- Results / Settings -->
+                <RowDefinition Height="Auto" MaxHeight="503" />
+            </Grid.RowDefinitions>
+
+            <!-- ── Search Bar ── -->
+            <views:SearchBar Grid.Row="0"
+                             MouseLeftButtonDown="SearchBar_MouseDown" />
+
+            <!-- ── 1px hairline divider ── -->
+            <Rectangle Grid.Row="1" Fill="{StaticResource Border}" />
+
+            <!-- ── Results List ── -->
+            <views:ResultsList Grid.Row="2" />
+
+            <!-- ── Settings Panel overlay — shown when ActiveExtension="settings" ── -->
+            <views:SettingsPanel x:Name="SettingsPanelView"
+                                 Grid.Row="2"
+                                 Visibility="Collapsed" />
+        </Grid>
+    </Border>
+</Window>
